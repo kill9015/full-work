@@ -70,5 +70,5 @@ var key = "phone"; */
 		updateDisplay();
     }
 function backgroundfunction() {
-    document.body.style.backgroundColor = "green";
+    backgroundColor = "green";
 }
