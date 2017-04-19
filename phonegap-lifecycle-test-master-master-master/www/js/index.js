@@ -69,3 +69,6 @@ var key = "phone"; */
 		resumed_count++;
 		updateDisplay();
     }
+function backgroundfunction() {
+    document.body.style.backgroundColor = "green";
+}
