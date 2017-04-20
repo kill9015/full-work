@@ -11,11 +11,11 @@ var key = "phone"; */
         // Event listener for device ready or not
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready"); 
-        window.localStorage.setItem("pen", "hello");
-        window.localStorage.setItem("phone", "welcome");
+        window.localStorage.setItem("pen", "hello and welcome to my application");
+       /* window.localStorage.setItem("phone", "welcome");
         window.localStorage.setItem("keys", "to");
         window.localStorage.setItem("wallet", "my");
-        window.localStorage.setItem("USB", "app");
+        window.localStorage.setItem("USB", "app"); */
        
         var calling = window.localStorage.getItem("pen");
         var calling2 = window.localStorage.getItem("phone");
@@ -70,5 +70,5 @@ var key = "phone"; */
 		updateDisplay();
     }
 function backgroundfunction() {
-    backgroundColor = "green";
+    android:background="@android:color/white"
 }
