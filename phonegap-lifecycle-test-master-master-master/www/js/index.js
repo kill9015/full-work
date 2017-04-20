@@ -18,15 +18,15 @@ var key = "phone"; */
         window.localStorage.setItem("USB", "app"); */
        
         var calling = window.localStorage.getItem("pen");
-        var calling2 = window.localStorage.getItem("phone");
+      /*  var calling2 = window.localStorage.getItem("phone");
         var calling3 = window.localStorage.getItem("keys");
         var calling4 = window.localStorage.getItem("wallet");
-        var calling5 = window.localStorage.getItem("USB");
+        var calling5 = window.localStorage.getItem("USB"); */
         window.alert(calling);
-        window.alert(calling2);
+      /*  window.alert(calling2);
         window.alert(calling3);
         window.alert(calling4);
-        window.alert(calling5);
+        window.alert(calling5); */
         
      /*   {var choclate = [ 
         {"anoreo": "Dairy Milk with Oreo"}
