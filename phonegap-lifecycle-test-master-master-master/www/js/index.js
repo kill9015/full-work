@@ -69,6 +69,3 @@ var key = "phone"; */
 		resumed_count++;
 		updateDisplay();
     }
-function backgroundfunction() {
-    setBackgroundcolor(int 0xff0000ff)
-} 
