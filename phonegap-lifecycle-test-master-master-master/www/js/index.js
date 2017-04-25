@@ -55,6 +55,8 @@ var key = "phone"; */
     }
 
 function toggle() {
+    alert("hello");
+    $("#pageone").addClass(theme: 'b');
     $(this).buttonMarkup({theme: 'b'});
-    $(this).parent().buttonMarkup({ theme: "b" });
+    $(this).parent().buttonMarkup({ theme: "b" });  
 }
