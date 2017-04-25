@@ -70,5 +70,5 @@ var key = "phone"; */
 		updateDisplay();
     }
 function backgroundfunction() {
-    android:background="@android:color/white"
-}
+    setBackgroundcolor(int 0xff0000ff)
+} 
