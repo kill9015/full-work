@@ -53,3 +53,7 @@ var key = "phone"; */
 		resumed_count++;
 		updateDisplay();
     }
+
+function toggle() {
+    $(this).buttonMarkup({theme: 'a'});
+}
