@@ -14,11 +14,35 @@
 -->
     <body>
   <div data-role="page" id="pageone" data-theme="a">
-  	<h1>Event counts</h1>
+      <div data-role="header" id="header">
+  	<h1>Home Page</h1>
 	<div id="launched"></div>
 	<div id="paused"></div>
 	<div id="resumed"></div>
       </div>
         <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div>
+      <div data-role="main" class="ui-content">
+          <p> can i get some text to appear plz
+        </div>
+      <div data-role="footer" style="text-align:center;">
+            Close program
+        </div>
+    </div>
+            <!-- <div> <button onclick="location()"> </button> </div>
+        <script>
+            var x =document.getElementById("test");
+            
+            function location() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPostion(showPosition);
+                }
+            }
+            
+            function showPosition(position) {
+                x.innerHTML = "latitude" + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+                
+            }
+        </script> -->
 </body>
 </html>
