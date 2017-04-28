@@ -60,3 +60,7 @@ function toggle() {
     $(this).buttonMarkup({theme: 'b'});
     $(this).parent().buttonMarkup({ theme: "b" });   */
 }
+
+function Background() {
+    document.body.style.backgroundColor = "red";
+}
