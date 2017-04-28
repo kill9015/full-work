@@ -15,9 +15,15 @@
     <body>
   <div data-role="page" id="pageone" data-theme="a">
       <div data-role="header" id="header">
-	   <a href="#pageone">Home</a>
+	 <!--  <a href="#pageone">Home</a> -->
   	<h1>Home Page</h1>
-	<a href="#pagetwo">customization</a>
+	<div data-role="navbar">
+	<ul>
+		<li><a href="#pageone">Home</a></li>
+		<li><a href="#pagetwo">customization</a></li>
+		<li><a href="#">page 3</a></li>
+	</ul>
+	</div>
       </div>
         <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div>
       <div data-role="main" class="ui-content">
@@ -32,8 +38,13 @@
 	 <div data-role="page" id="pagetwo" data-theme="a">
       <div data-role="header" id="header">
   	<h1>Customization</h1>
-	<a href="#pageone" >Home</a>
-	<a href="#pagetwo">Customization</a>
+		<div data-role="navbar">
+	<ul>
+		<li><a href="#pageone">Home</a></li>
+		<li><a href="#pagetwo">customization</a></li>
+		<li><a href="#">page 3</a></li>
+	</ul>
+	</div>
       </div>
         <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div>
       <div data-role="main" class="ui-content">
