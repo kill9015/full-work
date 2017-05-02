@@ -1,11 +1,5 @@
 // declared variables
-var paused_count =0;
-var resumed_count = 0;
-var launched_count = 0;
 var x = document.getElementById("testing");
-/*var key = "keys";
-var value = "silver";
-var key = "phone"; */
  
 
     function onLoad() {
@@ -25,27 +19,6 @@ var key = "phone"; */
         });
  
         
-    }
-	
-	function updateDisplay() {
-        // Function for when the applcation is launched, paused or resumed
-		$("#launched").text("Application launched: " + launched_count);
-		$("#resumed").text("Application paused: " + paused_count);
-		$("#paused").text("Application resumed: " + resumed_count);
-	}
-
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // refers to event listener at the top of document 
-		alert("device ready");
-        // when user hits resume/pause the opposite command will be changed to false  
-		document.addEventListener("resume", onResume, false);
-		document.addEventListener("pause", onPause, false);
-		
-		launched_count++;
-		updateDisplay();
     }
 
     // Handle the pause event
@@ -97,5 +70,9 @@ function showPosition(position) {
 function hello() {
     alert(latitude);
     alert(longitude);
+}
+
+function color() {
+	document.body.style.backgroundColor = "red";
 }
                   
