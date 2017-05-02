@@ -67,7 +67,7 @@ function exit() {
     navigator.app.exitApp();
 }
 
-/*function getLocation() { ...
+function getLocation() { 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
@@ -79,5 +79,5 @@ function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
      alert(position.coords.latitude);
-} */
+} 
                   
