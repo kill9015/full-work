@@ -78,7 +78,7 @@
       <div data-role="main" class="ui-content">
 		  <p>Page three </p>
              <button onclick="getLocation()"> location </button>
-                  <p id="testing"> why won't u work >: </p>
+                  <p id="testing"> your current location will be printed here </p>
           
                     
                   <script>
@@ -86,13 +86,11 @@
 
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        navigator.geolocation.getCurrentPosition(currentPosition);
     }
 }
 
-function showPosition(position) {
+function currentPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 } 
