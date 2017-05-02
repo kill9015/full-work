@@ -10,6 +10,10 @@ var key = "phone"; */
 
     function onLoad() {
         // Event listener for device ready or not
+		  $(document).on("pagethree", function() {
+            getLocation();
+            showPosition();
+			hello();
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready"); 
         window.localStorage.setItem("pen", "hello and welcome to my application");
@@ -17,10 +21,6 @@ var key = "phone"; */
       /*  var calling = window.localStorage.getItem("pen");
         window.alert(calling); */
         alert("hello");
-        $(document).on("pagethree", function() {
-            getLocation();
-            showPosition();
-			hello();
             
         });
  
