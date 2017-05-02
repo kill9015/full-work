@@ -15,9 +15,8 @@ var x = document.getElementById("testing");
       /*  var calling = window.localStorage.getItem("pen");
         window.alert(calling); */
         alert("hello");
-            
         });
- 
+		
         
     }
 
@@ -72,7 +71,9 @@ function hello() {
     alert(longitude);
 }
 
-function color() {
-	document.body.style.backgroundColor = "red";
-}
+/*function size() {
+	document.getElementById("pagetext").style.fontSize = "red";
+} */
+
+
                   

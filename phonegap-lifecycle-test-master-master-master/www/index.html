@@ -14,7 +14,7 @@
 -->
 <!--This is the start of page one -->
     <body onload="onLoad">
-  <div data-role="page" id="pageone"> <!-- data-theme="b" -->
+  <div data-role="page" id="pageone" data-theme="b">
       <div data-role="header" id="header">
   	<h1>Home Page</h1>
 	<div data-role="navbar">
@@ -27,10 +27,9 @@
       </div>
       <div data-role="main" class="ui-content">
 	<!--   <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div> -->
-		  <p>Hello and welcome to my Application, this application allows you to pin point your exact location in longitude and lattitude
+		  <p id="pagetext">Hello and welcome to my Application, this application allows you to pin point your exact location in longitude and lattitude
               following this there is a customization page that allows you to change theme and background colour of the application. We hope
               that you enjoy interacting with this application. </p>
-			  <button id="appbg" onclick="color()"> change color </button>
   <!--            <button onclick="getLocation()"> location </button>
                   <p id="test"> asdsad </p> -->
 
@@ -54,9 +53,14 @@
 	</ul>
 	</div>
       </div>
-        <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div>
+        <div>
       <div data-role="main" class="ui-content">
-          <p> Page two </p>
+          <p> Here you can select what color you would like your page to look</p>
+		  <button onclick="deafult()" data-theme="b"> default </button>
+		  <button onclick="black()" data-theme="a"> Black </button>
+		  <button onclick="grey()" data-theme="z"> Grey </button>
+		  <button onclick="white()" data-theme="d"> White </button>
+		  <button onclick="yellow()" data-theme="e"> Yellow </button>
         </div>
       <div data-role="footer" style="text-align:center;">
           <a href="#" onclick="exit()">Close program</a>
