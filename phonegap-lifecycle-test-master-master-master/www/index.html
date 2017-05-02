@@ -32,6 +32,10 @@
               that you enjoy interacting with this application. </p>
   <!--            <button onclick="getLocation()"> location </button>
                   <p id="test"> asdsad </p> -->
+    <a href="#myPopup" data-rel="popup" class="ui-btn ">Show Popup</a>
+				  <div data-role="popup" id="myPopup">
+				  <p> testing</p>
+				  </div>
 
           
         </div>
@@ -53,11 +57,11 @@
 	</div>
       </div> 
       <div data-role="main" class="ui-content">
-          <p> Page two </p>
-		  <button onclick="default" data-theme="b"> default </button>
-		  <button onclick="yellow" data-theme="a">blue</button>
+          <p> Here you can select the colour you would like the App to appear as </p>
+		  <button onclick="default" data-theme="b"> Default </button>
+		  <button onclick="yellow" data-theme="a">Blue</button>
 		  <button type="button"  data-theme="c">White</button>
-		  <button type="button" data-theme="z">grey</button>
+		  <button type="button" data-theme="z">Grey</button>
 		  <button type="button" data-theme="e">Yellow</button>
         </div>
       <div data-role="footer" style="text-align:center;">
@@ -77,9 +81,8 @@
 	</ul>
 	</div>
       </div>
-        <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div>
       <div data-role="main" class="ui-content">
-		  <p>Page three </p>
+		  <p>This page will display your current longitude and lattitude for you, simple press the button that says "location" </p>
              <button onclick="getLocation()"> location </button>
                   <p id="testing"> your current location will be printed here </p>
           
