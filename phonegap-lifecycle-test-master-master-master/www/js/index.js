@@ -83,11 +83,11 @@ function getLocation() {
 }
 
 function showPosition(position) {
-	alert("after");
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     hello();
-}
+	alert("after");
+
 //    alert("after");
 //    x.innerHTML = "Latitude: " + position.coords.latitude + 
 //    "<br>Longitude: " + position.coords.longitude;
