@@ -71,9 +71,45 @@ function hello() {
     alert(longitude);
 }
 
-/*function size() {
-	document.getElementById("pagetext").style.fontSize = "red";
-} */
+function normal() {
+	document.body.style.backgroundColor = "";
+} 
+
+function black() {
+	document.body.style.backgroundColor = "black";
+} 
+
+function white() {
+	document.body.style.backgroundColor = "white";
+} 
+
+function grey() {
+	document.body.style.backgroundColor = "grey";
+} 
+
+function yellow() {
+	document.body.style.backgroundColor = "yellow";
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                   
