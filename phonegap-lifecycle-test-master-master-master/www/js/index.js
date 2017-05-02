@@ -2,6 +2,7 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
+//var x = document.getElementById("testing");
 /*var key = "keys";
 var value = "silver";
 var key = "phone"; */
@@ -13,8 +14,9 @@ var key = "phone"; */
 		console.log("device ready"); 
         window.localStorage.setItem("pen", "hello and welcome to my application");
        
-        var calling = window.localStorage.getItem("pen");
-        window.alert(calling);
+      /*  var calling = window.localStorage.getItem("pen");
+        window.alert(calling); */
+        alert("hello");
  
         
     }
@@ -64,3 +66,18 @@ function toggle() {
 function exit() {
     navigator.app.exitApp();
 }
+
+/*function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+     alert(position.coords.latitude);
+} */
+                  
