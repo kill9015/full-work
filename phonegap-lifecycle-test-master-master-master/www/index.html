@@ -86,11 +86,11 @@
 
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(currentPosition);
+        navigator.geolocation.getCurrentPosition(showPosition);
     }
-} 
-function currentPosition(position) {
-    alert("testing");
+}
+
+function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 } 
