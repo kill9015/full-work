@@ -2,7 +2,7 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-//var x = document.getElementById("testing");
+var x = document.getElementById("testing");
 /*var key = "keys";
 var value = "silver";
 var key = "phone"; */
@@ -17,6 +17,11 @@ var key = "phone"; */
       /*  var calling = window.localStorage.getItem("pen");
         window.alert(calling); */
         alert("hello");
+        $(document).on("pagethree", function() {
+            getLocation();
+            showPosition();
+            
+        });
  
         
     }
@@ -68,6 +73,7 @@ function exit() {
 }
 
 function getLocation() { 
+    alert("before");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
@@ -76,8 +82,17 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-     alert(position.coords.latitude);
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+    hello();
+//    alert("after");
+//    x.innerHTML = "Latitude: " + position.coords.latitude + 
+//    "<br>Longitude: " + position.coords.longitude;
+//     alert(position.coords.latitude);
 } 
+
+function hello() {
+    alert(latitude);
+    alert(longitude);
+}
                   
