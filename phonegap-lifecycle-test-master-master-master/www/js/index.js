@@ -62,5 +62,5 @@ function toggle() {
 }
 
 function exit() {
-    navigator.exit.myApp();
+    navigator.app.exitApp();
 }
