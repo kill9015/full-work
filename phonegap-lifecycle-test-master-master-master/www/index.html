@@ -15,7 +15,7 @@
 <!--This is the start of page one -->
     <body>
   <div data-role="page" id="pageone" data-theme="b">
-      <div data-role="header" id="header"">
+      <div data-role="header" id="header">
   	<h1>Home Page</h1>
 	<div data-role="navbar">
 	<ul>
@@ -27,12 +27,14 @@
       </div>
       <div data-role="main" class="ui-content">
 	   <div>  <input onclick="toggle()" type="button" class="ui-btn ui-btn-a|b" value="Button"> </div>
-		  <p>Page one 
+		  <p>Hello and welcome to my Application, this application allows you to pin point your exact location in longitude and lattitude
+              following this there is a customization page that allows you to change theme and background colour of the application. We hope
+              that you enjoy interacting with this application. 
 			<button type="button" data-rel="back">close</button>
 		  </p>
         </div>
       <div data-role="footer" style="text-align:center;">
-            Close program
+            <a href="#" onclick="exit()">Close program</a>
         </div>
     </div>
 	
@@ -53,7 +55,7 @@
           <p> Page two </p>
         </div>
       <div data-role="footer" style="text-align:center;">
-            Close program
+          <a href="#" onclick="exit()">Close program</a>
         </div>
     </div>
 	
@@ -74,7 +76,7 @@
 		  <p>Page three </p>
         </div>
       <div data-role="footer" style="text-align:center;">
-            Close program
+          <a href="#" onclick="exit()">Close program</a>
         </div>
     </div>
             <!-- <div> <button onclick="location()"> </button> </div>
@@ -92,6 +94,6 @@
                     "<br>Longitude: " + position.coords.longitude;
                 
             }
-        </script> -->
+        </script>
 </body>
 </html>
