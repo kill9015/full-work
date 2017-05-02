@@ -20,6 +20,7 @@ var key = "phone"; */
         $(document).on("pagethree", function() {
             getLocation();
             showPosition();
+			hello();
             
         });
  
@@ -73,12 +74,12 @@ function exit() {
 }
 
 function getLocation() { 
-//    alert("before");
-//    if (navigator.geolocation) {
+   alert("before");
+   if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
-//    } else { 
-//        x.innerHTML = "Geolocation is not supported by this browser.";
-//    }
+   } else { 
+       x.innerHTML = "Geolocation is not supported by this browser.";
+    }
 }
 
 function showPosition(position) {
