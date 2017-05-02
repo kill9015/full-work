@@ -46,7 +46,7 @@ function exit() {
 }
 
 function getLocation() { 
-   alert("before");
+   alert("your current location is England ");
    if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
    } else { 
