@@ -85,12 +85,12 @@
                       var x = document.getElementById("testing");
 
 function getLocation() {
-    alert("testing");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(currentPosition);
     }
 } 
 function currentPosition(position) {
+    alert("testing");
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 } 
